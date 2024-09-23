@@ -17,7 +17,7 @@ public class MyClass {
 		
 		int a = 2, b=5;
 		int c = a+b;
-		
+		System.out.println("Ai cũng phải bắt đầu từ Hello World:)");
 		System.out.println("Tổng của a:"+a+" và b:"+b+" là: "+c);
 	}
 
