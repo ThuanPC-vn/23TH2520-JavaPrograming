@@ -50,12 +50,12 @@ public class Lab2Bai4 {
 	* @return null
 	*/
 	public static void menu() {
-        System.out.println("+---------------------------------------------------+");
+        System.out.println("+-------------------------------------+");
         System.out.println("|   1. Giải phương trình bậc nhất     |");
-        System.out.println("|   2. Giải phương trình bậc 2          |");
-        System.out.println("|   3. Tính tiền điện                           |");
-        System.out.println("|   4. Kết thúc                                    |");
-        System.out.println("+---------------------------------------------------+");
+        System.out.println("|   2. Giải phương trình bậc 2        |");
+        System.out.println("|   3. Tính tiền điện                 |");
+        System.out.println("|   4. Kết thúc                       |");
+        System.out.println("+-------------------------------------+");
         System.out.print("Chọn chức năng: ");
     }
 	
