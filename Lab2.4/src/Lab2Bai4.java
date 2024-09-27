@@ -14,7 +14,30 @@ public class Lab2Bai4 {
 	* @return null
 	*/
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+        int choice;
+        do {
+            menu();
+            choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    giaiPTB1();
+                    break;
+                case 2:
+                    giaiPTB2();
+                    break;
+                case 3:
+                    tinhTienDien();
+                    break;
+                case 4:
+                    System.out.println("Kết thúc chương trình.");
+                    break;
+                default:
+                    System.out.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
+            }
+        } while (choice != 4);
+        scanner.close();
 
 	}
 
