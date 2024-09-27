@@ -1,4 +1,9 @@
-package chDoiDonVi;
+/**
+* Declare library
+*/
+import java.util.Scanner;
+
+
 
 public class DoiDonVi {
 	
@@ -31,7 +36,32 @@ public class DoiDonVi {
 	* @return null
 	*/
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Chọn loại chuyển đổi:");
+        System.out.println("1. km -> m");
+        System.out.println("2. byte -> bit");
+        int choice = scanner.nextInt();
+
+        System.out.println("Nhập giá trị cần chuyển đổi:");
+        double value = scanner.nextDouble();
+
+        double result = 0;
+        switch (choice) {
+            case 1:
+                result = kmToM(value);
+                System.out.println(value + " km = " + result + " m");
+                break;
+            case 2:
+                result = byteToBit(value);
+                System.out.println(value + " byte = " + result + " bit");
+                break;
+            default:
+                System.out.println("Lựa chọn không hợp lệ.");
+        }
+
+        scanner.close();
 
 	}
 
