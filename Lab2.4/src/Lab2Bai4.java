@@ -39,6 +39,34 @@ public class Lab2Bai4 {
 	
 	
 	
+	/**
+	* Hàm tính PT bậc nhất
+	* @access public
+	* @param null
+	* @return null
+	*/
+	public static void giaiPTB1() {
+        // Mã giải phương trình bậc nhất
+        System.out.println("Giải phương trình bậc nhất ax + b = 0");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhập a: ");
+        double a = scanner.nextDouble();
+        System.out.print("Nhập b: ");
+        double b = scanner.nextDouble();
+        if (a != 0) {
+            double x = -b / a;
+            System.out.println("Nghiệm của phương trình là x = " + x);
+        } else {
+            if (b == 0) {
+                System.out.println("Phương trình có vô số nghiệm.");
+            } else {
+                System.out.println("Phương trình vô nghiệm.");
+            }
+        }
+    }
+	
+	
+	
 	
 	
 	
