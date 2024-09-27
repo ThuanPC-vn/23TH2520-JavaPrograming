@@ -22,7 +22,40 @@ public class Lab1Bai2 {
     }
 	
 	
+	/**
+	* Hàm tính chu vi
+	* @access public
+	* @param double, double
+	* @return double
+	*/
+    public static double tinhChuVi(double dai, double rong) {
+        return (dai + rong) * 2;
+    }
+
+    
+    /**
+	* Hàm tính diện tích
+	* @access public
+	* @param double, double
+	* @return double
+	*/
+    public static double tinhDienTich(double dai, double rong) {
+        return dai * rong;
+    }
+ 
+    
+    /**
+	* Hàm tìm cạnh nhỏ nhất
+	* @access public
+	* @param double, double
+	* @return double
+	*/
+    public static double timCanhNhoNhat(double dai, double rong) {
+        return Math.min(dai, rong);
+    }
 	
+    
+    
 	public static void main(String[] args) {
 		
 	}
