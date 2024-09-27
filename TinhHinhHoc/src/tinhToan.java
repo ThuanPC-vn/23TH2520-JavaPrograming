@@ -57,7 +57,22 @@ public class tinhToan {
 	* @return null
 	*/
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+
+        // Tính chu vi và diện tích hình chữ nhật
+        System.out.println("Nhập chiều dài hình chữ nhật:");
+        double dai = scanner.nextDouble();
+        System.out.println("Nhập chiều rộng hình chữ nhật:");
+        double rong = scanner.nextDouble();
+        System.out.println("Chu vi hình chữ nhật: " + tinhChuViHinhChuNhat(dai, rong));
+        System.out.println("Diện tích hình chữ nhật: " + tinhDienTichHinhChuNhat(dai, rong));
+
+        // Tính chu vi và diện tích hình tròn
+        System.out.println("Nhập bán kính hình tròn:");
+        double banKinh = scanner.nextDouble();
+        System.out.println("Chu vi hình tròn: " + tinhChuViHinhTron(banKinh));
+        System.out.println("Diện tích hình tròn: " + tinhDienTichHinhTron(banKinh));
 
 	}
 
