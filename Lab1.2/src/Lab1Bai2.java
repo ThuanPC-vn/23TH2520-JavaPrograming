@@ -58,8 +58,8 @@ public class Lab1Bai2 {
     /**
 	* Hàm main gọi đến các function trên và hiển thị kết quả
 	* @access public
-	* @param double, double
-	* @return double
+	* @param args
+	* @return null
 	*/
 	public static void main(String[] args) {
 		double[] canh = nhapDuLieu();

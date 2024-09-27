@@ -18,9 +18,26 @@ public class Lab1Bai3 {
     }
     
     
+    
+    /**
+	* Hàm main gọi đến các function trên và hiển thị kết quả
+	* @access public
+	* @param args
+	* @return null
+	*/
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
 
+        // Nhập cạnh của khối lập phương từ bàn phím
+        System.out.print("Nhập cạnh của khối lập phương: ");
+        double edge = scanner.nextDouble();
+
+        // Tính thể tích của khối lập phương
+        double volume = calculateVolume(edge);
+
+        // Xuất thể tích ra màn hình
+        System.out.println("Thể tích của khối lập phương là: " + volume);
 	}
 
 }
