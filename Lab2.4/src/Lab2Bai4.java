@@ -99,7 +99,34 @@ public class Lab2Bai4 {
 	
 	
 	
-	
+	/**
+	* Hàm tính PT bậc hai
+	* @access public
+	* @param null
+	* @return null
+	*/
+	public static void tinhTienDien() {
+        // Mã tính tiền điện
+        System.out.println("Tính tiền điện");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhập số điện tiêu thụ (kWh): ");
+        double kWh = scanner.nextDouble();
+        double tienDien;
+        if (kWh <= 50) {
+            tienDien = kWh * 1.678;
+        } else if (kWh <= 100) {
+            tienDien = 50 * 1.678 + (kWh - 50) * 1.734;
+        } else if (kWh <= 200) {
+            tienDien = 50 * 1.678 + 50 * 1.734 + (kWh - 100) * 2.014;
+        } else if (kWh <= 300) {
+            tienDien = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + (kWh - 200) * 2.536;
+        } else if (kWh <= 400) {
+            tienDien = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + (kWh - 300) * 2.834;
+        } else {
+            tienDien = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + 100 * 2.834 + (kWh - 400) * 2.927;
+        }
+        System.out.println("Số tiền điện phải trả là: " + tienDien + " VND");
+    }
 	
 	
 	
