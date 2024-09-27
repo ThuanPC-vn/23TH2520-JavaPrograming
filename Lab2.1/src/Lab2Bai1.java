@@ -27,10 +27,24 @@ public class Lab2Bai1 {
     }
 	
 	
-	
+	/**
+	* Hàm main gọi đến các function trên
+	* @access public
+	* @param args
+	* @return null
+	*/
 	public static void main(String[] args) {
 		
-		
+		Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Nhập vào số a: ");
+        double a = scanner.nextDouble();
+        
+        System.out.print("Nhập vào số b: ");
+        double b = scanner.nextDouble();
+        
+        // Gọi hàm giải phương trình bậc nhất
+        giaiPhuongTrinhBacNhat(a, b);
 
 	}
 
