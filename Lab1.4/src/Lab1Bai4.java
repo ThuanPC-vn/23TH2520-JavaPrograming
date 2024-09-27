@@ -30,8 +30,35 @@ public class Lab1Bai4 {
     
     
     
-    
+    /**
+	* Hàm main gọi đến các function trên và hiển thị kết quả
+	* @access public
+	* @param args
+	* @return null
+	*/
 	public static void main(String[] args) {
-		
+		Scanner scanner = new Scanner(System.in);
+
+        // Nhập các hệ số a, b, c
+        System.out.print("Nhập hệ số a: ");
+        double a = scanner.nextDouble();
+        System.out.print("Nhập hệ số b: ");
+        double b = scanner.nextDouble();
+        System.out.print("Nhập hệ số c: ");
+        double c = scanner.nextDouble();
+
+        // Tính delta
+        double delta = calculateDelta(a, b, c);
+        System.out.println("Delta = " + delta);
+
+        // Tính và xuất căn delta
+        if (delta >= 0) {
+            double sqrtDelta = calculateSqrtDelta(delta);
+            System.out.println("Căn delta = " + sqrtDelta);
+        } else {
+            System.out.println("Delta âm, không có căn delta thực.");
+        }
+
+        scanner.close();
 	}
 }
