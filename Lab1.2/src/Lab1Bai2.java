@@ -55,9 +55,24 @@ public class Lab1Bai2 {
     }
 	
     
-    
+    /**
+	* Hàm main gọi đến các function trên và hiển thị kết quả
+	* @access public
+	* @param double, double
+	* @return double
+	*/
 	public static void main(String[] args) {
-		
+		double[] canh = nhapDuLieu();
+        double dai = canh[0];
+        double rong = canh[1];
+
+        double chuVi = tinhChuVi(dai, rong);
+        double dienTich = tinhDienTich(dai, rong);
+        double canhNhoNhat = timCanhNhoNhat(dai, rong);
+
+        System.out.println("Chu vi hình chữ nhật là: " + chuVi);
+        System.out.println("Diện tích hình chữ nhật là: " + dienTich);
+        System.out.println("Cạnh nhỏ nhất của hình chữ nhật là: " + canhNhoNhat);
 	}
 
 }
